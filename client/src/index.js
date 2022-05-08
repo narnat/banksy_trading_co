@@ -1,13 +1,18 @@
+/* modules */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
 import { PersistGate } from 'redux-persist/integration/react'
+import { store, persistor } from './redux/store'
 
-import './index.css'
+/* components */
 import App from './App'
 
-import { store, persistor } from './redux/store'
+/* styles */
+import './index.css'
+
+/* service worker */
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
